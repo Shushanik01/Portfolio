@@ -1,0 +1,10 @@
+.section {
+  margin-bottom: 2.2rem;
+}
+
+.card {
+  border: 1px solid var(--about-card-border);
+  border-radius: 16px;
+  background: var(--about-card-bg);
+  padding: 1.5rem;
+}

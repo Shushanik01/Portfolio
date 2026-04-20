@@ -1,0 +1,130 @@
+.layout {
+  min-height: 100vh;
+  background: var(--layout-bg);
+  color: var(--layout-text);
+  border: 1px solid var(--layout-border);
+}
+
+.header {
+  padding: 0.95rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--layout-border);
+  background: var(--header-bg);
+}
+
+.brandBlock {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.brandTop {
+  margin: 0;
+  font-size: 1.75rem;
+  color: var(--brand-top);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  line-height: 0.8;
+}
+
+.brand {
+  margin: 0;
+  margin-top: 0.55rem;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.38em;
+  color: var(--brand-sub);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.link {
+  color: var(--nav-link);
+  font-size: 1.35rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-style: italic;
+  line-height: 1;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.35rem;
+}
+
+.activeLink {
+  color: var(--nav-active);
+  border-bottom-color: var(--nav-link-border-active);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.talkButton {
+  border: 1px solid var(--talk-btn-border);
+  background: var(--talk-btn-bg);
+  color: var(--talk-btn-color);
+  box-shadow: none;
+  text-transform: uppercase;
+  letter-spacing: 0.17em;
+  font-size: 0.58rem;
+  height: 34px;
+  padding-inline: 1.2rem;
+}
+
+.content {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0;
+}
+
+.footer {
+  border-top: 1px solid var(--footer-border);
+  padding: 1.2rem 1.7rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--footer-text);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+}
+
+.copy {
+  margin: 0;
+}
+
+.footerLinks {
+  display: flex;
+  gap: 1.8rem;
+}
+
+.footerLink {
+  color: var(--footer-link);
+}
+
+@media (max-width: 980px) {
+  .header {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+
+  .nav {
+    order: 3;
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.3rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: flex-start;
+  }
+}
