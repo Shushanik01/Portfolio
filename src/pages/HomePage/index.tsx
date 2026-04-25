@@ -1,7 +1,11 @@
 import { Button } from 'antd'
 import { HOME_PAGE_COPY, PHILOSOPHY_TOP_CARDS } from './consts'
 import { splitHeroTitle } from './utils'
-import styles from './style.module.css'
+import styles from './style.module.css';
+import CvSection from '../../api/cv.md?raw';
+import Markdown from 'react-markdown';
+import elipse from '../../assets/Ellipse 23.png';
+import logo from '../../assets/Logo.png'
 
 function HomePage() {
   const heroTitle = splitHeroTitle(
@@ -10,6 +14,8 @@ function HomePage() {
     HOME_PAGE_COPY.heroTitleEnd,
   )
 
+  const sections = CvSection.split('---');
+  const summary = sections[0].replace('**Summary**', '').trim()
   return (
     <>
       <section className={styles.heroGrid}>
@@ -29,9 +35,10 @@ function HomePage() {
 
         <div className={styles.heroRight}>
           <div className={styles.heroVisual}>
-            <div className={styles.heroVisualOuterRing} />
+            {/* <div className={styles.heroVisualOuterRing} />
             <div className={styles.heroVisualRing} />
-            <div className={styles.heroVisualCore} />
+            <div className={styles.heroVisualCore} /> */}
+            <Markdown>{summary}</Markdown>
           </div>
         </div>
       </section>

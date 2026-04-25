@@ -90,6 +90,19 @@
   background: var(--hp-visual-bg);
   position: relative;
   overflow: hidden;
+  padding: 2rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroVisual p {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 1.5rem;
+  line-height: 1.75;
+  color: var(--hp-body);
+  letter-spacing: 0.01em;
 }
 
 .heroVisualCore {

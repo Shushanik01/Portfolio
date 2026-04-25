@@ -1,0 +1,25 @@
+.container {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--about-card-border);
+  border-radius: 16px;
+  background: var(--about-card-bg);
+  line-height: 1.7;
+}
+
+.container h1,
+.container h2,
+.container h3 {
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+.container ul {
+  padding-left: 1.4rem;
+}
+
+.container hr {
+  border: none;
+  border-top: 1px solid var(--about-card-border);
+  margin: 1rem 0;
+}

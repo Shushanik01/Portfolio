@@ -2,7 +2,8 @@ import { Space, Tag, Typography } from 'antd'
 import { portfolioData } from '../../data/portfolio'
 import { ABOUT_PAGE_COPY } from './consts'
 import { sortSkills } from './utils'
-import styles from './style.module.css'
+import styles from './style.module.css';
+import CvSection from '../../components/CvSection';
 
 const { Title, Paragraph, Text } = Typography
 
@@ -20,6 +21,7 @@ function AboutPage() {
             </Tag>
           ))}
         </Space>
+          <CvSection/>
       </div>
     </section>
   )

@@ -1,0 +1,9 @@
+
+
+
+Generate a proffesional CV for a Software developer role according to the info provided above.
+I am a junior sofrware engineer, I graduated Yerevan State University with Master's degree,
+I have experience working in Ingo Armenia Insurance company.
+But right now I am a full stack intern at EPAM systems
+My skills are: AWS services (Lambda, Serverless, ES2, DynamoDB, API Gateway), 
+JavaScript, React, TypeScript, Node.js, Express.js, Lodash, Axios, Git, GitLab Vitest, Jest, zod, MUI, Tailwind, Antd, Redux Toolkit, Framer Motion, MongoDB, OAuth2, Postman
