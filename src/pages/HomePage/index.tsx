@@ -4,8 +4,8 @@ import { splitHeroTitle } from './utils'
 import styles from './style.module.css';
 import CvSection from '../../api/cv.md?raw';
 import Markdown from 'react-markdown';
-import elipse from '../../assets/Ellipse 23.png';
-import logo from '../../assets/Logo.png'
+// import elipse from '../../assets/Ellipse 23.png';
+// import logo from '../../assets/Logo.png'
 
 function HomePage() {
   const heroTitle = splitHeroTitle(

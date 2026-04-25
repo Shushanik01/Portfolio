@@ -62,6 +62,7 @@ export const Chat = () => {
                         <input
                             placeholder='Type your message here...'
                             value={inputValue}
+                            disabled={loading}
                             onChange={e => setInputValue(e.target.value)}
                             onKeyDown={e => e.key === 'Enter' && handleMessageSend()}
                         />
