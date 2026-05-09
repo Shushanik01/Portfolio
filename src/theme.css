@@ -1,176 +1,176 @@
 :root[data-theme='dark'] {
-  --page-bg: #0b0a10;
-  --page-text: #f8edf4;
+  --page-bg: #0a0a23;
+  --page-text: #ffffff;
 
-  --theme-toggle-ring: rgba(255, 255, 255, 0.14);
-  --theme-toggle-inner-bg: linear-gradient(145deg, #e0c4d8, #a785cb);
-  --theme-toggle-icon: #0b0813;
-  --theme-toggle-focus: #d7b8c7;
+  --theme-toggle-ring: rgba(255, 255, 255, 0.15);
+  --theme-toggle-inner-bg: linear-gradient(145deg, #90caf9, #1565c0);
+  --theme-toggle-icon: #0a0a23;
+  --theme-toggle-focus: #64b5f6;
 
   --layout-bg:
-    radial-gradient(circle at 30% -2%, rgba(248, 220, 238, 0.1), transparent 30%),
-    radial-gradient(circle at 90% 18%, rgba(142, 123, 165, 0.09), transparent 24%),
-    radial-gradient(circle at 35% 65%, rgba(161, 120, 156, 0.08), transparent 45%),
-    #100d16;
-  --layout-border: #2a2734;
-  --layout-text: #f6ecf2;
-  --header-bg: rgba(13, 11, 18, 0.85);
-  --brand-top: #f2dbe7;
-  --brand-sub: #d4ab7f;
-  --nav-link: #c6becf;
-  --nav-active: #fff4f7;
-  --nav-link-border-active: #d7b8c7;
-  --talk-btn-bg: #171321;
-  --talk-btn-border: #3f374d;
-  --talk-btn-color: #f7edf4;
-  --footer-border: #2a2734;
-  --footer-text: #8e849a;
-  --footer-link: #ad9fb6;
+    radial-gradient(circle at 30% -2%, rgba(100, 181, 246, 0.08), transparent 30%),
+    radial-gradient(circle at 90% 18%, rgba(30, 136, 229, 0.07), transparent 24%),
+    radial-gradient(circle at 35% 65%, rgba(66, 165, 245, 0.06), transparent 45%),
+    #0d1b2a;
+  --layout-border: #1b3a5c;
+  --layout-text: #e8f4fd;
+  --header-bg: rgba(10, 10, 35, 0.88);
+  --brand-top: #90caf9;
+  --brand-sub: #64b5f6;
+  --nav-link: #90b8d8;
+  --nav-active: #ffffff;
+  --nav-link-border-active: #42a5f5;
+  --talk-btn-bg: #0d1b2a;
+  --talk-btn-border: #1e4976;
+  --talk-btn-color: #e8f4fd;
+  --footer-border: #1b3a5c;
+  --footer-text: #6a9bbf;
+  --footer-link: #90b8d8;
 
-  --hp-border: #282432;
+  --hp-border: #1b3a5c;
   --hp-hero-bg:
-    radial-gradient(circle at 20% 4%, rgba(250, 233, 240, 0.08), transparent 35%),
-    radial-gradient(circle at 75% 45%, rgba(104, 83, 134, 0.14), transparent 42%),
-    linear-gradient(90deg, rgba(18, 15, 25, 0.97), rgba(16, 14, 23, 0.92));
-  --hp-eyebrow: #b19cab;
-  --hp-title: #f6ebf2;
-  --hp-accent: #e7b9d0;
-  --hp-body: #b7a8b5;
-  --hp-btn-border: #3d3448;
-  --hp-btn-bg: #1e1828;
-  --hp-btn-text: #f8ecf5;
-  --hp-btn-primary-bg: #e6b4cd;
-  --hp-btn-primary-text: #17131f;
-  --hp-btn-primary-border: #f0cde0;
-  --hp-btn-secondary-bg: #171320;
-  --hp-visual-border: #2f2938;
+    radial-gradient(circle at 20% 4%, rgba(100, 181, 246, 0.07), transparent 35%),
+    radial-gradient(circle at 75% 45%, rgba(30, 136, 229, 0.1), transparent 42%),
+    linear-gradient(90deg, rgba(10, 10, 35, 0.97), rgba(13, 27, 42, 0.94));
+  --hp-eyebrow: #7ab3d4;
+  --hp-title: #e8f4fd;
+  --hp-accent: #64b5f6;
+  --hp-body: #90b8d8;
+  --hp-btn-border: #1e4976;
+  --hp-btn-bg: #0d1b2a;
+  --hp-btn-text: #e8f4fd;
+  --hp-btn-primary-bg: #1565c0;
+  --hp-btn-primary-text: #ffffff;
+  --hp-btn-primary-border: #1976d2;
+  --hp-btn-secondary-bg: #0d1b2a;
+  --hp-visual-border: #1b3a5c;
   --hp-visual-bg:
-    radial-gradient(circle at 18% 10%, rgba(121, 78, 107, 0.2), transparent 30%),
-    radial-gradient(circle at 78% 72%, rgba(130, 120, 158, 0.14), transparent 34%),
-    linear-gradient(160deg, rgba(28, 25, 38, 0.95), rgba(18, 16, 24, 0.93));
-  --hp-visual-orb-core: radial-gradient(circle, rgba(193, 175, 220, 0.22) 0%, rgba(160, 140, 195, 0.08) 55%, transparent 75%);
-  --hp-visual-ring: rgba(180, 165, 210, 0.11);
-  --hp-visual-outer-ring: rgba(165, 150, 195, 0.06);
+    radial-gradient(circle at 18% 10%, rgba(66, 165, 245, 0.18), transparent 30%),
+    radial-gradient(circle at 78% 72%, rgba(30, 136, 229, 0.12), transparent 34%),
+    linear-gradient(160deg, rgba(13, 27, 42, 0.97), rgba(10, 10, 35, 0.95));
+  --hp-visual-orb-core: radial-gradient(circle, rgba(100, 181, 246, 0.22) 0%, rgba(66, 165, 245, 0.08) 55%, transparent 75%);
+  --hp-visual-ring: rgba(100, 181, 246, 0.13);
+  --hp-visual-outer-ring: rgba(100, 181, 246, 0.06);
 
   --hp-philosophy-bg:
-    radial-gradient(circle at 16% 100%, rgba(84, 76, 102, 0.12), transparent 46%),
-    #12101a;
-  --hp-section-title: #e8c3d6;
-  --hp-section-title-border: #292534;
-  --hp-philosophy-card-border: #242131;
-  --hp-philosophy-watermark: rgba(210, 185, 200, 0.045);
+    radial-gradient(circle at 16% 100%, rgba(30, 136, 229, 0.1), transparent 46%),
+    #0d1b2a;
+  --hp-section-title: #64b5f6;
+  --hp-section-title-border: #1b3a5c;
+  --hp-philosophy-card-border: #1b3a5c;
+  --hp-philosophy-watermark: rgba(100, 181, 246, 0.045);
   --hp-philosophy-article-bg:
-    linear-gradient(180deg, rgba(18, 16, 24, 0.78), rgba(19, 17, 27, 0.95)),
-    radial-gradient(circle at 78% 12%, rgba(119, 109, 140, 0.14), transparent 35%);
-  --hp-compass: #343041;
-  --hp-philosophy-heading: #e3b8cf;
-  --hp-philosophy-text: #b8acb8;
-  --hp-card-border: #2f2938;
-  --hp-card-bg: #171320;
-  --hp-card-title: #b99775;
-  --hp-card-body: #d3c7d7;
-  --hp-tag-bg: #0a0a0c;
-  --hp-tag-border: #1a1a1e;
-  --hp-tag-text: #f5f3f7;
-  --hp-feature-border: #312b3b;
+    linear-gradient(180deg, rgba(13, 27, 42, 0.82), rgba(10, 10, 35, 0.96)),
+    radial-gradient(circle at 78% 12%, rgba(30, 136, 229, 0.12), transparent 35%);
+  --hp-compass: #1e4976;
+  --hp-philosophy-heading: #64b5f6;
+  --hp-philosophy-text: #90b8d8;
+  --hp-card-border: #1b3a5c;
+  --hp-card-bg: #0d1b2a;
+  --hp-card-title: #42a5f5;
+  --hp-card-body: #b0cfe8;
+  --hp-tag-bg: #0a0a1e;
+  --hp-tag-border: #1b3a5c;
+  --hp-tag-text: #e8f4fd;
+  --hp-feature-border: #1b3a5c;
   --hp-feature-bg:
-    radial-gradient(circle at 57% 50%, rgba(193, 201, 220, 0.35), transparent 17%),
-    radial-gradient(circle at 58% 50%, rgba(193, 201, 220, 0.1), transparent 34%),
-    radial-gradient(circle at 57% 50%, transparent 27%, rgba(183, 190, 207, 0.3) 28%, transparent 30%),
-    linear-gradient(150deg, #0d0c12, #171722 55%, #13121e);
-  --hp-feature-text: #ede2ea;
-  --hp-spark: #eac2d8;
-  --hp-banner-title: #f7eaf2;
-  --hp-banner-accent: #b39cf0;
+    radial-gradient(circle at 57% 50%, rgba(100, 181, 246, 0.3), transparent 17%),
+    radial-gradient(circle at 58% 50%, rgba(100, 181, 246, 0.1), transparent 34%),
+    radial-gradient(circle at 57% 50%, transparent 27%, rgba(66, 165, 245, 0.25) 28%, transparent 30%),
+    linear-gradient(150deg, #0a0a23, #0d1b2a 55%, #0a1628);
+  --hp-feature-text: #e8f4fd;
+  --hp-spark: #42a5f5;
+  --hp-banner-title: #e8f4fd;
+  --hp-banner-accent: #90caf9;
 
-  --about-card-bg: #171320;
-  --about-card-border: #2f2938;
+  --about-card-bg: #0d1b2a;
+  --about-card-border: #1b3a5c;
 }
 
 :root[data-theme='light'] {
-  --page-bg: #f4f0f8;
-  --page-text: #1f1a24;
+  --page-bg: #ffffff;
+  --page-text: #0a0a23;
 
-  --theme-toggle-ring: #c8c0d4;
-  --theme-toggle-inner-bg: linear-gradient(145deg, #f5ecff, #d4c4f0);
-  --theme-toggle-icon: #2a2438;
-  --theme-toggle-focus: #6b5b95;
+  --theme-toggle-ring: #bbd6f5;
+  --theme-toggle-inner-bg: linear-gradient(145deg, #e3f2fd, #90caf9);
+  --theme-toggle-icon: #0d47a1;
+  --theme-toggle-focus: #1976d2;
 
   --layout-bg:
-    radial-gradient(circle at 30% -2%, rgba(200, 160, 210, 0.18), transparent 32%),
-    radial-gradient(circle at 90% 18%, rgba(160, 140, 200, 0.12), transparent 26%),
-    radial-gradient(circle at 35% 65%, rgba(220, 200, 230, 0.15), transparent 45%),
-    #faf8fc;
-  --layout-border: #e2dfe8;
-  --layout-text: #1f1a24;
-  --header-bg: rgba(255, 255, 255, 0.92);
-  --brand-top: #4a3a52;
-  --brand-sub: #8a6b48;
-  --nav-link: #5c5466;
-  --nav-active: #2d2438;
-  --nav-link-border-active: #b89a8d;
+    radial-gradient(circle at 30% -2%, rgba(100, 181, 246, 0.14), transparent 32%),
+    radial-gradient(circle at 90% 18%, rgba(30, 136, 229, 0.09), transparent 26%),
+    radial-gradient(circle at 35% 65%, rgba(66, 165, 245, 0.1), transparent 45%),
+    #f8fbff;
+  --layout-border: #cce0f5;
+  --layout-text: #0a0a23;
+  --header-bg: rgba(255, 255, 255, 0.94);
+  --brand-top: #0d47a1;
+  --brand-sub: #1565c0;
+  --nav-link: #1e5799;
+  --nav-active: #0a0a23;
+  --nav-link-border-active: #1976d2;
   --talk-btn-bg: #ffffff;
-  --talk-btn-border: #d4d0dc;
-  --talk-btn-color: #2d2438;
-  --footer-border: #e2dfe8;
-  --footer-text: #7a7288;
-  --footer-link: #6b5f7a;
+  --talk-btn-border: #bbd6f5;
+  --talk-btn-color: #0a0a23;
+  --footer-border: #cce0f5;
+  --footer-text: #5a7fa0;
+  --footer-link: #1565c0;
 
-  --hp-border: #e2dfe8;
+  --hp-border: #cce0f5;
   --hp-hero-bg:
-    radial-gradient(circle at 20% 4%, rgba(200, 160, 210, 0.15), transparent 35%),
-    radial-gradient(circle at 75% 45%, rgba(180, 160, 210, 0.12), transparent 42%),
-    linear-gradient(90deg, rgba(255, 252, 255, 0.98), rgba(248, 244, 252, 0.95));
-  --hp-eyebrow: #7a6b82;
-  --hp-title: #2d2438;
-  --hp-accent: #b5658d;
-  --hp-body: #5c5466;
-  --hp-btn-border: #d4d0dc;
+    radial-gradient(circle at 20% 4%, rgba(100, 181, 246, 0.12), transparent 35%),
+    radial-gradient(circle at 75% 45%, rgba(30, 136, 229, 0.09), transparent 42%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.99), rgba(240, 248, 255, 0.97));
+  --hp-eyebrow: #2979b0;
+  --hp-title: #0a0a23;
+  --hp-accent: #1565c0;
+  --hp-body: #1e4d7a;
+  --hp-btn-border: #bbd6f5;
   --hp-btn-bg: #ffffff;
-  --hp-btn-text: #2d2438;
-  --hp-btn-primary-bg: #e6b4cd;
-  --hp-btn-primary-text: #17131f;
-  --hp-btn-primary-border: #e8c4d8;
-  --hp-btn-secondary-bg: #f8f4fc;
-  --hp-visual-border: #d4d0dc;
+  --hp-btn-text: #0a0a23;
+  --hp-btn-primary-bg: #1565c0;
+  --hp-btn-primary-text: #ffffff;
+  --hp-btn-primary-border: #1976d2;
+  --hp-btn-secondary-bg: #f0f8ff;
+  --hp-visual-border: #bbd6f5;
   --hp-visual-bg:
-    radial-gradient(circle at 18% 10%, rgba(180, 140, 170, 0.15), transparent 30%),
-    radial-gradient(circle at 78% 72%, rgba(160, 150, 200, 0.12), transparent 34%),
-    linear-gradient(160deg, rgba(240, 236, 248, 0.98), rgba(230, 224, 240, 0.95));
-  --hp-visual-orb-core: radial-gradient(circle, rgba(160, 130, 200, 0.18) 0%, rgba(140, 110, 180, 0.07) 55%, transparent 75%);
-  --hp-visual-ring: rgba(140, 120, 180, 0.13);
-  --hp-visual-outer-ring: rgba(140, 120, 180, 0.07);
+    radial-gradient(circle at 18% 10%, rgba(100, 181, 246, 0.14), transparent 30%),
+    radial-gradient(circle at 78% 72%, rgba(30, 136, 229, 0.1), transparent 34%),
+    linear-gradient(160deg, rgba(232, 244, 253, 0.99), rgba(219, 235, 250, 0.97));
+  --hp-visual-orb-core: radial-gradient(circle, rgba(100, 181, 246, 0.2) 0%, rgba(66, 165, 245, 0.07) 55%, transparent 75%);
+  --hp-visual-ring: rgba(30, 136, 229, 0.15);
+  --hp-visual-outer-ring: rgba(30, 136, 229, 0.07);
 
   --hp-philosophy-bg:
-    radial-gradient(circle at 16% 100%, rgba(180, 160, 200, 0.12), transparent 46%),
-    #f6f2fa;
-  --hp-section-title: #a56585;
-  --hp-section-title-border: #e2dfe8;
-  --hp-philosophy-card-border: #e2dfe8;
-  --hp-philosophy-watermark: rgba(100, 75, 120, 0.055);
+    radial-gradient(circle at 16% 100%, rgba(100, 181, 246, 0.1), transparent 46%),
+    #f0f8ff;
+  --hp-section-title: #1565c0;
+  --hp-section-title-border: #cce0f5;
+  --hp-philosophy-card-border: #cce0f5;
+  --hp-philosophy-watermark: rgba(21, 101, 192, 0.055);
   --hp-philosophy-article-bg:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(248, 244, 252, 0.98)),
-    radial-gradient(circle at 78% 12%, rgba(200, 180, 220, 0.12), transparent 35%);
-  --hp-compass: #c4b8d0;
-  --hp-philosophy-heading: #a56585;
-  --hp-philosophy-text: #5c5466;
-  --hp-card-border: #e2dfe8;
+    linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(240, 248, 255, 0.99)),
+    radial-gradient(circle at 78% 12%, rgba(100, 181, 246, 0.1), transparent 35%);
+  --hp-compass: #bbd6f5;
+  --hp-philosophy-heading: #1565c0;
+  --hp-philosophy-text: #1e4d7a;
+  --hp-card-border: #cce0f5;
   --hp-card-bg: #ffffff;
-  --hp-card-title: #8a6b48;
-  --hp-card-body: #5c5466;
-  --hp-tag-bg: #1a1520;
-  --hp-tag-border: #1a1520;
-  --hp-tag-text: #f5f3f7;
-  --hp-feature-border: #e2dfe8;
+  --hp-card-title: #1565c0;
+  --hp-card-body: #1e4d7a;
+  --hp-tag-bg: #0d47a1;
+  --hp-tag-border: #0d47a1;
+  --hp-tag-text: #ffffff;
+  --hp-feature-border: #cce0f5;
   --hp-feature-bg:
-    radial-gradient(circle at 57% 50%, rgba(200, 210, 230, 0.45), transparent 17%),
-    radial-gradient(circle at 58% 50%, rgba(200, 210, 230, 0.2), transparent 34%),
-    linear-gradient(150deg, #eef0f8, #e4e6f2 55%, #e8eaf4);
-  --hp-feature-text: #3d3550;
-  --hp-spark: #a56585;
-  --hp-banner-title: #2d2438;
-  --hp-banner-accent: #7b5fb8;
+    radial-gradient(circle at 57% 50%, rgba(179, 217, 255, 0.5), transparent 17%),
+    radial-gradient(circle at 58% 50%, rgba(179, 217, 255, 0.25), transparent 34%),
+    linear-gradient(150deg, #e8f4fd, #dbeeff 55%, #e3f2fd);
+  --hp-feature-text: #0a0a23;
+  --hp-spark: #1565c0;
+  --hp-banner-title: #0a0a23;
+  --hp-banner-accent: #1976d2;
 
   --about-card-bg: #ffffff;
-  --about-card-border: #e5e7eb;
+  --about-card-border: #cce0f5;
 }

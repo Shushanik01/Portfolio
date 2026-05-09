@@ -1,12 +1,12 @@
 export const HOME_PAGE_COPY = {
-  eyebrow: 'Frontend Specialist',
+  eyebrow: 'Software Developer',
   heroTitleStart: 'Building',
   heroTitleAccent: 'elegant,',
   heroTitleEnd: 'high-performance interfaces.',
   heroText:
     'Merging the rigors of technical architecture with the soul of editorial design. I create digital spaces that feel as good as they function.',
   ctaPrimary: 'Download CV',
-  ctaSecondary: 'View Projects',
+  ctaSecondary: 'Watch CV',
   philosophyTitle: 'The Philosophy',
   philosophySubtitle: 'Visual Harmony',
   philosophyText:

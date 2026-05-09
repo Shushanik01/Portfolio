@@ -1,0 +1,223 @@
+.wrapper {
+  border: 1px solid var(--hp-border);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 3.5rem 1.5rem 4.5rem;
+  background: var(--hp-philosophy-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  margin: 0 0 0.4rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--hp-section-title);
+  border-bottom: 1px solid var(--hp-section-title-border);
+  padding-bottom: 0.6rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.sub {
+  margin: 0 0 3rem;
+  width: 100%;
+  max-width: 1100px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--hp-eyebrow);
+}
+
+/* ── Carousel ───────────────────────────── */
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.track {
+  flex: 1;
+  position: relative;
+  height: 340px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* ── Cards ──────────────────────────────── */
+.card {
+  position: absolute;
+  width: 340px;
+  padding: 2rem 1.8rem;
+  border: 1px solid var(--hp-card-border);
+  background: var(--hp-card-bg);
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity   0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              scale     0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(calc(var(--offset) * 380px)) scale(0.82);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.cardAdjacent {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.cardActive {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+  border-color: var(--hp-btn-primary-border);
+  box-shadow: 0 0 0 1px var(--hp-btn-primary-border),
+              0 8px 40px rgba(21, 101, 192, 0.15);
+}
+
+.cardPeriod {
+  margin: 0;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--hp-accent);
+}
+
+.cardTitle {
+  margin: 0;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--layout-text);
+  line-height: 1.2;
+}
+
+.cardDesc {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.65;
+  color: var(--hp-body);
+  flex: 1;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+}
+
+.tag {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border: 1px solid var(--hp-tag-border);
+  background: var(--hp-tag-bg);
+  color: var(--hp-tag-text);
+  padding: 0.2rem 0.55rem;
+  border-radius: 2px;
+}
+
+/* ── Arrows ─────────────────────────────── */
+.arrow {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--hp-btn-border);
+  background: var(--hp-btn-bg);
+  color: var(--layout-text);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.18s, border-color 0.18s;
+}
+
+.arrow:hover {
+  background: var(--hp-btn-primary-bg);
+  border-color: var(--hp-btn-primary-border);
+}
+
+/* ── Dots ───────────────────────────────── */
+.dots {
+  display: flex;
+  gap: 0.55rem;
+  margin-top: 2.2rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--hp-btn-border);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.dotActive {
+  background: var(--hp-accent);
+  border-color: var(--hp-accent);
+}
+
+.githubCard {
+  text-decoration: none;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.2rem;
+  background: var(--hp-btn-primary-bg);
+  border-color: var(--hp-btn-primary-border);
+  box-shadow: 0 0 0 1px var(--hp-btn-primary-border),
+              0 8px 40px rgba(21, 101, 192, 0.25);
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity   0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              scale     0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              box-shadow 0.18s;
+}
+
+.githubCard.cardActive:hover {
+  box-shadow: 0 0 0 1px var(--hp-btn-primary-border),
+              0 12px 48px rgba(21, 101, 192, 0.4);
+}
+
+.githubCard .cardTitle,
+.githubCard .cardDesc {
+  color: var(--hp-btn-primary-text);
+}
+
+.githubIcon {
+  font-size: 2.2rem;
+  color: var(--hp-btn-primary-text);
+  line-height: 1;
+  opacity: 0.85;
+}
+
+.githubHandle {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--hp-btn-primary-text);
+  opacity: 0.7;
+  border: 1px solid rgba(255,255,255,0.25);
+  padding: 0.3rem 0.8rem;
+  border-radius: 2px;
+}
+
+@media (max-width: 700px) {
+  .track { height: 400px; }
+  .card { width: 280px; }
+  .carousel { gap: 0.6rem; }
+}

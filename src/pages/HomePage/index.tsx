@@ -1,91 +1,91 @@
+import { useState } from 'react'
 import { Button } from 'antd'
-import { HOME_PAGE_COPY, PHILOSOPHY_TOP_CARDS } from './consts'
-import { splitHeroTitle } from './utils'
+import { useNavigate } from 'react-router-dom'
+import { GithubOutlined, LinkedinFilled } from '@ant-design/icons'
+import { APP_ROUTES } from '../../app/consts'
+import { HOME_PAGE_COPY } from './consts'
+import { ProjectsCarousel } from '../../components/ProjectsCarousel'
 import styles from './style.module.css';
-import CvSection from '../../api/cv.md?raw';
-import Markdown from 'react-markdown';
-// import elipse from '../../assets/Ellipse 23.png';
-// import logo from '../../assets/Logo.png'
+import profilePhoto from '../../assets/profilePhoto.jpg';
+import cvRaw from '../../api/cv.md?raw';
+import { CvModal } from '../../components/CvModal';
+
+const summary = cvRaw.split('---')[0].replace('**Summary**', '').trim();
 
 function HomePage() {
-  const heroTitle = splitHeroTitle(
-    HOME_PAGE_COPY.heroTitleStart,
-    HOME_PAGE_COPY.heroTitleAccent,
-    HOME_PAGE_COPY.heroTitleEnd,
-  )
+  const [cvOpen, setCvOpen] = useState(false)
+  const navigate = useNavigate()
 
-  const sections = CvSection.split('---');
-  const summary = sections[0].replace('**Summary**', '').trim()
   return (
     <>
       <section className={styles.heroGrid}>
         <div className={styles.heroLeft}>
+          <h1 className={styles.heroName}>Shushanik Arakelyan</h1>
           <p className={styles.eyebrow}>{HOME_PAGE_COPY.eyebrow}</p>
-          <h1 className={styles.heroTitle}>
-            <span className={styles.heroLine}>{heroTitle.start}</span>
-            <span className={`${styles.heroLine} ${styles.accent}`}>{heroTitle.accent}</span>
-            <span className={styles.heroLine}>{heroTitle.end}</span>
-          </h1>
-          <p className={styles.heroText}>{HOME_PAGE_COPY.heroText}</p>
+          <p className={styles.heroText}>{summary}</p>
           <div className={styles.heroActions}>
-            <Button className={styles.primaryButton}>{HOME_PAGE_COPY.ctaPrimary}</Button>
-            <Button className={styles.secondaryButton}>{HOME_PAGE_COPY.ctaSecondary}</Button>
+            <Button className={styles.primaryButton} onClick={() => { const a = document.createElement('a'); a.href = '/cv.pdf'; a.download = 'Shushanik_Arakelyan_CV.pdf'; a.click(); }}>{HOME_PAGE_COPY.ctaPrimary}</Button>
+            <Button className={styles.secondaryButton} onClick={() => setCvOpen(true)}>{HOME_PAGE_COPY.ctaSecondary}</Button>
+          </div>
+          <div className={styles.socialLinks}>
+            <a href="https://github.com/Shushanik01" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="GitHub">
+              <GithubOutlined />
+            </a>
+            <a href="https://www.linkedin.com/in/shushanik-arakelyan-4b763b365/" target="_blank" rel="noopener noreferrer" className={styles.socialLink} aria-label="LinkedIn">
+              <LinkedinFilled />
+            </a>
           </div>
         </div>
 
         <div className={styles.heroRight}>
-          <div className={styles.heroVisual}>
-            {/* <div className={styles.heroVisualOuterRing} />
-            <div className={styles.heroVisualRing} />
-            <div className={styles.heroVisualCore} /> */}
-            <Markdown>{summary}</Markdown>
-          </div>
-        </div>
-      </section>
-
-      <section id="service" className={styles.philosophySection}>
-        <h2 className={styles.sectionTitle}>{HOME_PAGE_COPY.philosophyTitle}</h2>
-        <div className={styles.philosophyGrid}>
-          <article className={styles.philosophyArticle}>
-            <span className={styles.philosophyWatermark} aria-hidden="true">A</span>
-            <div className={styles.compassMark}>⌖</div>
-            <h3 className={styles.philosophyHeading}>{HOME_PAGE_COPY.philosophySubtitle}</h3>
-            <p className={styles.philosophyText}>{HOME_PAGE_COPY.philosophyText}</p>
-          </article>
-
-          <div className={styles.rightPanel}>
-            <div className={styles.topCards}>
-              {PHILOSOPHY_TOP_CARDS.map((card) => (
-                <article key={card.title} className={styles.card}>
-                  <p className={styles.cardTitle}>{card.title}</p>
-                  <p className={styles.cardBody}>{card.body}</p>
-                  {'tags' in card && card.tags ? (
-                    <div className={styles.tagRow}>
-                      {card.tags.map((tag) => (
-                        <span key={tag} className={styles.tag}>
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  ) : null}
-                </article>
-              ))}
+          <div className={styles.photoWrapper}>
+            <div className={styles.orbit1}><span className={styles.electron} /></div>
+            <div className={styles.orbit2}><span className={styles.electron} /></div>
+            <div className={styles.orbit3}><span className={styles.electron} /></div>
+            <div className={styles.photoRing}>
+              <div className={styles.photoPlaceholder}>
+                <img src={profilePhoto} alt="Profile photo" className={styles.photoImg} />
+              </div>
             </div>
-            <article className={styles.featureCard}>
-              <p className={styles.featureText}>Precision in Every Pixel</p>
-            </article>
+            <span className={`${styles.formula} ${styles.f1}`}>E=mc²</span>
+            <span className={`${styles.formula} ${styles.f2}`}>F=ma</span>
+            <span className={`${styles.formula} ${styles.f3}`}>P=IU</span>
+            <span className={`${styles.formula} ${styles.f4}`}>ΔU=A+Q</span>
+            <span className={`${styles.formula} ${styles.f5}`}>T=2π√LC</span>
+            <span className={`${styles.formula} ${styles.f6}`}>λ=vT</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f7}`}>{'<div />'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f8}`}>{'useState()'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f9}`}>{'display: flex'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f10}`}>{'const () =>'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f11}`}>{'<React />'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f12}`}>{'border-radius'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f13}`}>{'@keyframes'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f14}`}>{'npm install'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f15}`}>{'useEffect()'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f16}`}>{'useRef()'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f17}`}>{'useMemo()'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f18}`}>{'props.children'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f19}`}>{'useCallback()'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f20}`}>{'React.memo()'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f21}`}>{'key={id}'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f22}`}>{'useContext()'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f23}`}>{'<Suspense />'}</span>
+            <span className={`${styles.formula} ${styles.code} ${styles.f24}`}>{'async/await'}</span>
           </div>
         </div>
       </section>
 
-      <section id="projects" className={styles.bannerSection}>
+      <ProjectsCarousel />
+
+      <section className={styles.bannerSection}>
         <p className={styles.spark}>✦ ✦</p>
         <h2 className={styles.bannerTitle}>
           {HOME_PAGE_COPY.ctaBannerPrefix} <span className={styles.bannerAccent}>{HOME_PAGE_COPY.ctaBannerAccent}</span>{' '}
           {HOME_PAGE_COPY.ctaBannerSuffix}
         </h2>
-        <Button className={styles.bannerButton}>{HOME_PAGE_COPY.ctaBannerButton}</Button>
+        <Button className={styles.bannerButton} onClick={() => navigate(APP_ROUTES.contact)}>{HOME_PAGE_COPY.ctaBannerButton}</Button>
       </section>
+      <CvModal open={cvOpen} onClose={() => setCvOpen(false)} />
     </>
   )
 }

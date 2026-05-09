@@ -1,0 +1,199 @@
+.wrapper {
+  border: 1px solid var(--hp-border);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding: 3.5rem 1.5rem 4.5rem;
+  background: var(--hp-philosophy-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  margin: 0 0 0.4rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--hp-section-title);
+  border-bottom: 1px solid var(--hp-section-title-border);
+  padding-bottom: 0.6rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.sub {
+  margin: 0 0 3rem;
+  width: 100%;
+  max-width: 1100px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--hp-eyebrow);
+}
+
+/* ── Carousel ───────────────────────────── */
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.track {
+  flex: 1;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* ── Cards ──────────────────────────────── */
+.card {
+  position: absolute;
+  width: 560px;
+  border: 1px solid var(--hp-card-border);
+  background: var(--hp-card-bg);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              opacity   0.45s cubic-bezier(0.4, 0, 0.2, 1),
+              scale     0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateX(calc(var(--offset) * 600px)) scale(0.82);
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.cardAdjacent {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.cardActive {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  pointer-events: auto;
+  border-color: var(--hp-btn-primary-border);
+  box-shadow: 0 0 0 1px var(--hp-btn-primary-border),
+              0 8px 40px rgba(21, 101, 192, 0.15);
+}
+
+/* ── Image area ─────────────────────────── */
+.imageWrapper {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  background: var(--hp-philosophy-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid var(--hp-card-border);
+}
+
+.placeholderIcon {
+  font-size: 2.5rem;
+  color: var(--hp-accent);
+  opacity: 0.4;
+}
+
+.placeholderText {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--hp-eyebrow);
+}
+
+/* ── Info bar ───────────────────────────── */
+.info {
+  padding: 1rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.issuer {
+  margin: 0;
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--hp-accent);
+}
+
+.title {
+  margin: 0;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--layout-text);
+  line-height: 1.2;
+}
+
+/* ── Arrows ─────────────────────────────── */
+.arrow {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--hp-btn-border);
+  background: var(--hp-btn-bg);
+  color: var(--layout-text);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.18s, border-color 0.18s;
+}
+
+.arrow:hover {
+  background: var(--hp-btn-primary-bg);
+  border-color: var(--hp-btn-primary-border);
+}
+
+/* ── Dots ───────────────────────────────── */
+.dots {
+  display: flex;
+  gap: 0.55rem;
+  margin-top: 2.2rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid var(--hp-btn-border);
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.dotActive {
+  background: var(--hp-accent);
+  border-color: var(--hp-accent);
+}
+
+@media (max-width: 700px) {
+  .track { height: 340px; }
+  .card { width: 300px; }
+  .imageWrapper { height: 220px; }
+  .carousel { gap: 0.6rem; }
+}

@@ -2,7 +2,8 @@
   min-height: 100vh;
   background: var(--layout-bg);
   color: var(--layout-text);
-  border: 1px solid var(--layout-border);
+  border-top: 1px solid var(--layout-border);
+  border-bottom: 1px solid var(--layout-border);
 }
 
 .header {

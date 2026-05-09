@@ -1,7 +1,8 @@
 
 **Summary**
 
-Highly motivated Junior Software Engineer with a Master's degree from Yerevan State University. Currently gaining hands-on full-stack experience as an Intern at EPAM Systems, specializing in modern web technologies including React, Node.js, and a comprehensive suite of AWS services. Eager to apply a robust technical skill set and a passion for building scalable, efficient, and user-centric applications in a dynamic development environment.
+Highly motivated Junior Software Engineer with a Master's degree from Yerevan State University. Currently gaining hands-on full-stack experience as a Junior Developer at EPAM Systems, specializing in modern web technologies including React, Node.js, and a comprehensive suite of AWS services. 
+
 
 ---
 
@@ -18,26 +19,25 @@ Highly motivated Junior Software Engineer with a Master's degree from Yerevan St
 
 **Professional Experience**
 
-**Full Stack Intern | EPAM Systems** | [Start Date, e.g., May 2023] – Present | [City, Country]
-*   Developed and maintained full-stack applications, contributing to both front-end user interfaces and back-end API development using React, Node.js, and TypeScript.
-*   Gained practical experience with serverless architectures, leveraging AWS services such as Lambda, DynamoDB, and API Gateway to build scalable and cost-effective solutions.
-*   Contributed to the development of responsive and interactive user interfaces with Redux Toolkit, MUI, Tailwind CSS, Ant Design, and Framer Motion.
-*   Implemented RESTful APIs and integrated with MongoDB for data persistence, ensuring robust data management and security using OAuth2.
-*   Wrote comprehensive unit and integration tests using Vitest and Jest to ensure code quality, reliability, and maintainability.
-*   Actively participated in agile development methodologies, including daily stand-ups, sprint planning, and code reviews in GitLab.
+**May 2025 – Jan 2026 | Frontend Developer | N2G Brains**
 
-**[Your Role Title, e.g., IT Support Specialist / Junior Systems Analyst] | Ingo Armenia Insurance Company** | [Start Date] – [End Date] | [City, Country]
-*   Supported internal users and maintained critical business applications and systems, demonstrating strong problem-solving abilities in a corporate environment.
-*   Assisted in troubleshooting technical issues related to software and hardware, ensuring minimal downtime for operations.
-*   Collaborated with cross-functional teams to identify and implement solutions, contributing to the smooth operation of IT infrastructure.
-*   Managed and processed data, enhancing familiarity with system interactions and data flow within an enterprise setting.
-*   *(Optional: If you did *any* scripting or more technical work, add a bullet point here, e.g., "Wrote small scripts in [Language] to automate routine tasks and improve efficiency.")*
+Developed and maintained responsive web applications using React and JavaScript, ensuring optimal user experience across devices. Collaborated with cross-functional teams to translate design mockups into functional, high-performance interfaces. Implemented reusable components, optimized code for performance, and participated in code reviews to maintain code quality standards. Worked with modern development tools and version control systems to deliver scalable solutions.
+
+**Nov 2025 – Present | Full Stack & Cloud Engineering Intern | EPAM**
+
+An intensive internship working on real-world client projects. Developed full-stack applications using modern JavaScript frameworks and implemented cloud solutions with AWS serverless technologies including Lambda, API Gateway, and DynamoDB. Built RESTful APIs, integrated frontend components, and deployed scalable cloud infrastructure. Participated in agile development cycles, code reviews, and collaborated directly with senior engineers to deliver production-ready solutions.
 
 ---
 
 **Education**
 
-**Master's Degree in [Your Master's Field, e.g., Computer Science / Information Technology] | Yerevan State University** | [Graduation Year, e.g., 2022]
+**Sep 2019 – May 2023 | Bachelor's Degree | Yerevan State University**
+
+Graduated with honors (Red Diploma), demonstrating consistent academic excellence throughout the program. Developed strong analytical and critical thinking skills while maintaining top academic performance across all coursework.
+
+**Sep 2023 – May 2025 | Master's Degree | Yerevan State University**
+
+Completed with honors (Red Diploma), maintaining outstanding academic performance and achieving top-tier results. Advanced research and problem-solving capabilities through rigorous academic challenges and independent study.
 
 ---
 
