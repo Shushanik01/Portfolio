@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import styles from './index.module.css'
+import vetclinicImg from '../../assets/vetclinic-preview.png'
+import asyncRaceImg from '../../assets/async-race-preview.png'
 
 const PROJECTS = [
   {
@@ -8,6 +10,17 @@ const PROJECTS = [
     description:
       'Developing the frontend for a comprehensive veterinary clinic management system. Building responsive UIs with React to manage patient records, appointments, inventory, and client communications.',
     tags: ['React', 'TypeScript', 'REST API'],
+    url: 'https://shushanik01.github.io/VetClinic/',
+    image: vetclinicImg as string,
+  },
+  {
+    title: 'Async Race',
+    period: 'Jan 2026 — Feb 2026',
+    description:
+      'A full-stack racing simulation web app featuring asynchronous multi-car races with animated movements, paginated garage management, and random car generation. Backed by a real Express.js server and a parallel MSW mock server for development and testing.',
+    tags: ['React', 'TypeScript', 'Express.js', 'MSW'],
+    url: 'https://shushanik01.github.io/race-game/',
+    image: asyncRaceImg as string,
   },
   {
     title: 'Insurance Company Web App',
@@ -62,12 +75,19 @@ export function ProjectsCarousel() {
               const offset = i - current
               const isActive = offset === 0
               const isAdjacent = Math.abs(offset) === 1
-              return (
-                <article
-                  key={project.title}
-                  className={`${styles.card} ${isActive ? styles.cardActive : ''} ${isAdjacent ? styles.cardAdjacent : ''}`}
-                  style={{ '--offset': offset } as React.CSSProperties}
-                >
+              const className = [
+                styles.card,
+                isActive ? styles.cardActive : '',
+                isAdjacent ? styles.cardAdjacent : '',
+                project.image ? styles.cardWithBg : '',
+                project.url ? styles.cardLink : '',
+              ].filter(Boolean).join(' ')
+              const style = {
+                '--offset': offset,
+                ...(project.image ? { '--card-bg-image': `url(${project.image})` } : {}),
+              } as React.CSSProperties
+              const content = (
+                <>
                   <p className={styles.cardPeriod}>{project.period}</p>
                   <h3 className={styles.cardTitle}>{project.title}</h3>
                   <p className={styles.cardDesc}>{project.description}</p>
@@ -76,6 +96,19 @@ export function ProjectsCarousel() {
                       <span key={tag} className={styles.tag}>{tag}</span>
                     ))}
                   </div>
+                  {project.url && <span className={styles.visitLink}>Visit Project →</span>}
+                </>
+              )
+              if (project.url) {
+                return (
+                  <a key={project.title} href={project.url} target="_blank" rel="noopener noreferrer" className={className} style={style}>
+                    {content}
+                  </a>
+                )
+              }
+              return (
+                <article key={project.title} className={className} style={style}>
+                  {content}
                 </article>
               )
             })}
