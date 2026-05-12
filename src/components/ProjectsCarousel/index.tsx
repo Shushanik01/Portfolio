@@ -2,6 +2,7 @@ import { useState } from 'react'
 import styles from './index.module.css'
 import vetclinicImg from '../../assets/vetclinic-preview.png'
 import asyncRaceImg from '../../assets/async-race-preview.png'
+import ecommerceImg from '../../assets/ecommerce-preview.png'
 
 const PROJECTS = [
   {
@@ -23,6 +24,15 @@ const PROJECTS = [
     image: asyncRaceImg as string,
   },
   {
+    title: 'E-Commerce Platform',
+    period: 'Aug 2025 — Sep 2025',
+    description:
+      'A fully-responsive e-commerce app showcasing the Nike footwear collection with a dynamic product catalog, interactive customisation, and a seamless checkout process.',
+    tags: ['React', 'CSS Modules', 'JavaScript'],
+    url: 'https://shushanik01.github.io/E-commerce-website/',
+    image: ecommerceImg as string,
+  },
+  {
     title: 'Insurance Company Web App',
     period: 'Nov 2025 — Jan 2026',
     description:
@@ -35,13 +45,6 @@ const PROJECTS = [
     description:
       'A dynamic movie discovery app integrated with The Movie Database (TMDb) API delivering real-time data including trending films, cast details, and user ratings.',
     tags: ['React', 'TMDb API', 'JavaScript'],
-  },
-  {
-    title: 'Nike E-Commerce Platform',
-    period: 'Aug 2025 — Sep 2025',
-    description:
-      'A fully-responsive e-commerce app showcasing the Nike footwear collection with a dynamic product catalog, interactive customisation, and a seamless checkout process.',
-    tags: ['React', 'CSS Modules', 'JavaScript'],
   },
   {
     title: 'Weather Forecast App',
